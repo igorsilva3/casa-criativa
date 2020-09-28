@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Casa criativa</title>
+{% endblock title %}
+
+{% block content %}
+    <section id="intro">
+        <header>
+            <a href="/">
+                <img src="/img/logo.png" alt="Imagem da Logomarca">
+            </a>
+        </header>
+
+        <main>
+            <p>
+                Ficar em casa em perídos longos, não deve ser nada fácil. 
+            </p>
+        
+            <p>
+                Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos,
+                livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento interessante. 
+            </p>
+        
+            <p>
+                Comece clicando em ver ideias para ver as
+                ideias cadastradas e contribua adicionando a sua ideia
+            </p>
+        </main>
+
+        <section id="buttons">
+            <button onclick="onOff()">+ Adicionar Ideia</button>
+            <a href="/ideas" class="button">Ver Ideia</a>
+        </section>
+    </section>
+
+    <section id="last-ideas">
+        {% include 'all_ideas.html' %}
+    </section>
+{% endblock content %}
