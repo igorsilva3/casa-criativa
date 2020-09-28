@@ -66,6 +66,10 @@ main {
     margin-top: 32px 0;
 }
 
+main p {
+    text-align: justify;
+}
+
 #buttons {
     margin-bottom: 32px;
     display: flex;
@@ -88,21 +92,6 @@ button:hover{
     text-decoration: underline;
 }
 
-
-
-footer {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    color: #777;
-}
-
-footer a {
-    opacity: 0.7;
-}
-
 .idea {
     display: flex;
     margin-bottom: 32px;
@@ -110,6 +99,7 @@ footer a {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+    text-align: justify;
 }
 
 .idea img {
@@ -135,7 +125,7 @@ footer a {
 
 #modal {
     background: #ff5e84;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
@@ -149,7 +139,7 @@ footer a {
 }
 
 #modal .content {
-    margin-top: 15%;
+    margin-top: 5%;
     color: white;
 }
 
